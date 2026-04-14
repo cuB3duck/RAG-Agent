@@ -1,0 +1,17 @@
+services:
+  backend:
+    build: ./back_end
+    ports:
+      - "5000:5000"
+    environment:
+      OLLAMA_HOST: http://host.docker.internal:11434
+    volumes:
+      - ./back_end/uploads:/app/uploads
+      - ./back_end/chroma_db:/app/chroma_db
+
+  frontend:
+    build: ./front_end
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend

@@ -1,0 +1,120 @@
+/* Welcome Message */
+.welcome {
+color: white;
+margin: 20px;
+font-family: Roboto , sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Chat container */
+.chat-container {
+  max-width: 600px;
+  margin: 20px;
+  padding: 10px;
+  font-family: Roboto , sans-serif;
+}
+
+/* Title */
+.chat-title {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5px;
+  margin-bottom: 5px;
+}
+
+/* Chat box */
+.chat-box {
+  background: white;
+  padding: 50px;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 25px;
+}
+
+/* Each message block */
+.chat-entry {
+  background: #E1D9D1;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+}
+
+/* User message */
+.chat-user strong {
+  color: #f92f2f;
+}
+
+/* AI message */
+.chat-ai strong {
+  color: #0077cc;
+}
+
+/* User text and AI text */
+.chat-user, .chat-ai {
+  color: #000;
+}
+
+/* Form layout */
+.chat-form {
+  display: flex;
+  gap: 10px
+}
+
+/* Input box */
+.chat-input {
+  flex:20;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 15px;
+}
+
+/* Submit chat button */
+.chat-button {
+  border-radius: 6px;
+  background: #0077cc;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.chat-button:hover {
+  background: #005fa3;
+}
+
+/* Delete files button */
+.delete-button {
+  cursor: pointer;
+  font-size: 13px;
+  margin-left: 10px;
+  background: #fe5d78;
+  color: white;
+  padding: 5px
+}
+
+.delete-button:hover {
+  background: #cb4b61;
+}
+
+/* Files upload button */
+.final-upload-button {
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 10px;
+  background: #0077cc;
+  color: white;
+  padding: 5px;
+  display: block;
+  margin-top: 10px;
+}
+
+
+.final-upload-button:hover {
+  background: #005fa3;
+}
