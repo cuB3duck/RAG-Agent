@@ -1,6 +1,6 @@
 # Personal-Data-Assistant
 
-Local AI agent uses RAG to answers questions about a personal information dataset.
+Local AI agent uses RAG to answers questions about medical document pdfs.
 <br>The LLM uses semantic search to retrieve data to answer questions.  
 The model is deployed locally to protect sensitive information.  
 Ollama runs the **llama3.2** model and **nomic-embed-text** model is used for embeddings.  
@@ -9,34 +9,22 @@ LangChain's Chroma stores and retrieves text embeddings.
 
 ## Installation
 
-1. **Create a virtual environment**
+1. **Install requirements in the back_end directory.**
    ```bash
-   python -m venv venv
-2. **Activate the virtual environment**
-   ```bash
-   .\venv\Scripts\activate
-3. **Install Python dependencies**
-   ```bash
-   pip install -r requirements.txt
-4. **Install required Ollama models**
+   pip install -r .\requirements.txt
+2. **Install these in terminal.**
    ```bash
    ollama pull llama3.2
    ollama pull nomic-embed-text
-
-
-## Dataset Setup
-Personal information is stored in a CSV file and loaded as a Pandas DataFrame.
-<br>The expected columns are Name, DOB, and SSN.
-<br>The agent requires a CSV file.
-
-##  Running the Agent
-``` bash
-python main.py
-```
-
-Question:  
-"When was John Doe born?"
-
-Answer:  
-"John Doe was born 8/1/2001."
-
+3. **Run this while in the directory for each docker file**
+   ```bash
+   Docker file in the front end
+        docker build -t front .
+    Docker file in the back end
+        docker build -t back .
+4. **Use these commands for the yml file.**
+   ```bash
+   When making changes to the code use
+        docker compose down
+    When running the program use
+        docker compose up --build
