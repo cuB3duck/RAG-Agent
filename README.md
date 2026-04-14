@@ -26,8 +26,7 @@ Docker file in the back end
    docker build -t back .
 
 
-
-4. **Use these commands for the yml file.**
+4.  **Use these commands for the yml file.**
 When making changes to the code use
    ```bash
    docker compose down
