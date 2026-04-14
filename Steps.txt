@@ -1,31 +1,16 @@
 Steps
-1. Create a virtual environment.
-    python -m venv venv
-2. Activate virtual environment.
-    ./venv/Scripts/activate
-3. Install requirements.
+1. Install requirements in the back_end directory.
     pip install -r .\requirements.txt
-4. Install these in terminal.
+2. Install these in terminal.
     ollama pull llama3.2
     ollama pull nomic-embed-text
-5. Split into two terminals and run:
-    Where App.jsx is located -> npm run dev
-    Where Main.py is located -> py -3.12 Main.py
-
-
-1. Docker file in the front end
-docker build -t front .
-docker run -p 5173:5173 front
-
-force removal
-docker rmi -f front
-docker rmi $(docker images -q)
-
-
-2. Docker file in the back end
-docker build -t back .
-docker run -p 5000:5000 back
-
-#yml file
-docker compose down
-docker compose up --build
+3. Run this while in the directory for each docker file
+    Docker file in the front end
+        docker build -t front .
+    Docker file in the back end
+        docker build -t back .
+3. Use these commands for the yml file.
+    When making changes to the code use
+        docker compose down
+    When running the program use
+        docker compose up --build
