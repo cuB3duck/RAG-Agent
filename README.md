@@ -35,7 +35,6 @@ LangChain's Chroma stores and retrieves text embeddings.
       ```
       
    When running the program use
-      
       ```bash
       docker compose up --build
       ```
