@@ -17,14 +17,18 @@ LangChain's Chroma stores and retrieves text embeddings.
    ollama pull llama3.2
    ollama pull nomic-embed-text
 3. **Run this while in the directory for each docker file**
-   ```bash
    Docker file in the front end
-        docker build -t front .
-    Docker file in the back end
-        docker build -t back .
-4. **Use these commands for the yml file.**
    ```bash
+   docker build -t front .
+
+    Docker file in the back end
+   ```bash
+   docker build -t back .
+5. **Use these commands for the yml file.**
    When making changes to the code use
-        docker compose down
-    When running the program use
-        docker compose up --build
+   ```bash
+   docker compose down
+
+   When running the program use
+   ```bash
+   docker compose up --build
