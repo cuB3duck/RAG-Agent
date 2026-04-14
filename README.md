@@ -33,7 +33,8 @@ When making changes to the code use
 
       ```bash
       docker compose down
-      ```
+      
+      
    When running the program use
       
       ```bash
