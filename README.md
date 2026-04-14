@@ -24,6 +24,8 @@ Docker file in the front end
 Docker file in the back end
    ```bash
    docker build -t back .
+
+
 4. **Use these commands for the yml file.**
 When making changes to the code use
    ```bash
