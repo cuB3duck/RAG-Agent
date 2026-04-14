@@ -17,6 +17,7 @@ LangChain's Chroma stores and retrieves text embeddings.
    ollama pull llama3.2
    ollama pull nomic-embed-text
 3. **Run this while in the directory for each docker file**
+
 Docker file in the front end
    ```bash
    docker build -t front .
