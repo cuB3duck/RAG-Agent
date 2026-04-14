@@ -21,7 +21,7 @@ Docker file in the front end
    ```bash
    docker build -t front .
 
-   Docker file in the back end
+Docker file in the back end
    ```bash
    docker build -t back .
 
