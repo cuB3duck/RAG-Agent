@@ -28,7 +28,6 @@ LangChain's Chroma stores and retrieves text embeddings.
       ```
 
 4.  **Use these commands for the yml file.**
-
    When making changes to the code use
       ```bash
       docker compose down
