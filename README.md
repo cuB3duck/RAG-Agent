@@ -31,7 +31,8 @@ Docker file in the back end
 When making changes to the code use
    ```bash
    docker compose down
-
+   ```
 When running the program use
    ```bash
    docker compose up --build
+   ```
